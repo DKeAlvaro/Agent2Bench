@@ -958,6 +958,7 @@ footer {
 /* Enhanced mobile responsiveness for landing page */
 @media (max-width: 768px) {
     .floating-nav {
+        margin-top: -3rem;
         position: relative;
         top: 0;
         right: 0;
