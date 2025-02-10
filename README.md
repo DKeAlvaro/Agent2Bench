@@ -23,6 +23,8 @@ Currently, no benchmark that measures this capability exists. Agent2Bench is my 
 
 Such a benchmark should be as open as possible, therefore it will be **open source** and **allow anyone to submit tasks to be benchmarked**, and to view the results.
 
+Tasks should be easily verifiable, e.g: if the task is to solve the wordle, then the LLM should return the wordle solution. If the task is to book a flight, then the LLM should return the flight details, and so on.
+
 ## Collaboration
 I'm looking for collaborators to help me build this benchmark. If you're interested in collaborating, please contact me.
 
