@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Agent2Bench</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include navigation template -->
+    <div id="nav-placeholder"></div>
+
+    <main>
+        <section class="tasks-header">
+            <h1>Benchmark Tasks</h1>
+            <p>Browse and explore our collection of real-world tasks</p>
+        </section>
+
+        <section class="tasks-filters">
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Difficulty:</label>
+                    <select id="task-difficulty-filter">
+                        <option value="all">All</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Task Type:</label>
+                    <select id="task-type-filter">
+                        <option value="all">All Types</option>
+                        <option value="ui">UI Interaction</option>
+                        <option value="browsing">Internet Browsing</option>
+                        <option value="system">System Operations</option>
+                        <option value="coding">Coding Tasks</option>
+                    </select>
+                </div>
+
+                <div class="search-group">
+                    <input type="text" id="task-search" placeholder="Search tasks...">
+                </div>
+            </div>
+        </section>
+
+        <section class="tasks-grid">
+            <!-- Tasks will be populated by JavaScript -->
+        </section>
+
+        <div class="tasks-pagination">
+            <button id="prev-page" class="pagination-btn">Previous</button>
+            <span id="page-info">Page 1 of 1</span>
+            <button id="next-page" class="pagination-btn">Next</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Agent2Bench. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/tasks.js"></script>
+    <script src="../js/cursor-effect.js"></script>
+    <script>
+        // Load navigation template
+        fetch('../templates/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 

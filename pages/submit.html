@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Task - Agent2Bench</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include navigation template -->
+    <div id="nav-placeholder"></div>
+
+    <main>
+        <section class="submit-header">
+            <h1>Submit a New Task</h1>
+            <p>Contribute to the benchmark by submitting a new task</p>
+        </section>
+
+        <section class="submit-section">
+            <form id="task-submission-form" class="task-form">
+                <div class="form-group">
+                    <label for="task-name">Task Name</label>
+                    <input type="text" id="task-name" required placeholder="e.g., Solve Today's Wordle">
+                </div>
+
+                <div class="form-group">
+                    <label for="task-description">Task Description</label>
+                    <textarea id="task-description" required placeholder="Provide clear, step-by-step instructions for the task..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-difficulty">Difficulty Level</label>
+                    <select id="task-difficulty" required>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-type">Task Type</label>
+                    <select id="task-type" required>
+                        <option value="ui">UI Interaction</option>
+                        <option value="browsing">Internet Browsing</option>
+                        <option value="system">System Operations</option>
+                        <option value="coding">Coding Tasks</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="verification-method">Verification Method</label>
+                    <textarea id="verification-method" required placeholder="Describe how to verify if the task was completed successfully..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="expected-output">Expected Output/Result</label>
+                    <textarea id="expected-output" required placeholder="What should the final result look like? Include specific success criteria..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="time-limit">Time Limit (minutes)</label>
+                    <input type="number" id="time-limit" min="1" max="60" value="15" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Task</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Agent2Bench. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/submit.js"></script>
+    <script src="../js/cursor-effect.js"></script>
+    <script>
+        // Load navigation template
+        fetch('../templates/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 
