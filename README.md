@@ -1,8 +1,6 @@
 <div align="center">
-  <img src="img/github-banner.png" alt="Agent2Bench Logo" width="200"/>
+  <img src="img/github-banner.png" alt="Agent2Bench Logo" width="600"/>
 </div>
-
-# Agent2Bench
 
 Agent2Bench is a benchmark for testing LLM real-world capabilities.
 A demo can be found at [https://dkealvaro.github.io/Agent2Bench/](https://dkealvaro.github.io/Agent2Bench/). Note that the demo doesn't include real results, it's just a proof of concept.
