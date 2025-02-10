@@ -6,7 +6,7 @@
   <br/>
 </div>
 
-Agent2Bench is a benchmark that tests LLMs abilities in daily life computer tasks like booking flights, downloading programs or exiting vim.
+Agent2Bench is a proposed benchmark that tests LLMs abilities in daily life computer tasks like booking flights, downloading programs or exiting vim.
 A demo can be found at [https://dkealvaro.github.io/Agent2Bench/](https://dkealvaro.github.io/Agent2Bench/). Note that the demo doesn't include real results, it's just a proof of concept.
 
 
