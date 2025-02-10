@@ -1,7 +1,7 @@
 <div align="center">
-  <picture>
-    <img src="img/github-banner.png" alt="Agent2Bench Logo" width="600" style="border-radius: 10px"/>
-  </picture>
+  <kbd>
+    <img src="img/github-banner.png" alt="Agent2Bench Logo" width="600"/>
+  </kbd>
   <br/>
   <br/>
 </div>
