@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/logo.png" alt="Agent2Bench Logo" width="200"/>
+  <img src="img/github-banner.png" alt="Agent2Bench Logo" width="200"/>
 </div>
 
 # Agent2Bench
